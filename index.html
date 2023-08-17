@@ -5,28 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
     <form action="">
-        <p>
+        <h1>Validate My Form</h1>
+        <p id="p1">
             <label for="mail">What's your email address?</label>
-            <input type="email" id="mail" name="email">
+            <input type="email" 
+            id="mail" 
+            name="email"
+            required>
+            <span class="error" aria-live="polite"></span>
         </p>
-        <p>
+        <p id="p2">
             <label for="ZIP">ZIP :</label>
-            <input type="text" id="ZIP"/>
+            <input type="text" 
+            id="ZIP"
+            title=""
+            required/>
         </p>
-        <p>
+        <p id="p3">
             <label for="Country">Country :</label>
-            <select id="Country">
+            <select id="Country"
+            required>
                 <option value="ch">Switzerland</option>
                 <option value="fr">France</option>
                 <option value="de">Germany</option>
                 <option value="nl">The Netherlands</option>
             </select>
         </p>
-        <p>
+        <p id="p4">
             <label for="psw">Password</label>
             <input type="password" 
             id="psw"
@@ -38,12 +48,14 @@
              <input type="password" 
              name="confirm-psw" 
              id="psw"
-             placeholder="Confirm Password">
+             placeholder="Confirm Password"
+             required>
         </p>
-        <p>
-            <input type="submit">
+        <p id="p5">
+            <input type="submit" id="submit">
         </p>
     </form>
+    <script src="index.js"></script>
 </body>
 
 </html>

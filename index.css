@@ -1,0 +1,66 @@
+form{
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@keyframes example {
+    0% {background-color: red; left: 0px; top: 0px;}
+    25% {background-color: yellow; left: 500px; top: 0px;}
+    50%  {background-color:blue; left:500px; top:400px;}
+    75%  {background-color:green; left:0px; top:400px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+p > label {
+    display: block;
+}
+#p1 {
+    display: block;
+    width: 240px;
+}
+
+input[type=email]{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    border: 1px solid #333;
+    margin: 0;
+    font-family: inherit;
+    font-size: 90%;
+    box-sizing: border-box;
+}
+
+input:invalid {
+    border-color: #900;
+}
+
+input:focus:invalid {
+    outline: none;
+  }
+
+  .error {
+    width: 100%;
+    padding: 0;
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+  }
+  
+  .error.active {
+    padding: 0.3em;
+  }

@@ -23,8 +23,9 @@
             <label for="ZIP">ZIP :</label>
             <input type="text" 
             id="ZIP"
-            title=""
+    
             required/>
+            <span class="error" aria-live="polite"></span>
         </p>
         <p id="p3">
             <label for="Country">Country :</label>
@@ -45,11 +46,13 @@
              title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" 
              placeholder="Enter Password"
              required>
+             <span class="error" aria-live="polite"></span>
              <input type="password" 
              name="confirm-psw" 
-             id="psw"
+             id="psw2"
              placeholder="Confirm Password"
              required>
+             <span class="error" aria-live="polite"></span>
         </p>
         <p id="p5">
             <input type="submit" id="submit">

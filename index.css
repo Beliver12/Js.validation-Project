@@ -27,12 +27,12 @@ body{
 p > label {
     display: block;
 }
-#p1 {
+#p1, #p2 {
     display: block;
     width: 240px;
 }
 
-input[type=email]{
+input[type=email], input[type='text']{
     -webkit-appearance: none;
     appearance: none;
     width: 100%;
@@ -47,6 +47,10 @@ input:invalid {
     border-color: #900;
 }
 
+input:valid {
+    border-color: green;
+}
+
 input:focus:invalid {
     outline: none;
   }
@@ -54,13 +58,11 @@ input:focus:invalid {
   .error {
     width: 100%;
     padding: 0;
-    font-size: 80%;
+    font-size: 100%;
     color: white;
     background-color: #900;
     border-radius: 0 0 5px 5px;
     box-sizing: border-box;
   }
   
-  .error.active {
-    padding: 0.3em;
-  }
+  
